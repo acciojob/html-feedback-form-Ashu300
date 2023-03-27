@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	  <h1>Feedback Form</h1><form method="get">
-    <div>
-        <label for="name">name</label>
-        <input type="text" id="Name" minlength="3" maxlength="50">
-    </div>
-    <div>
-        <label for="portfolio">portfolio</label>
-        <input type="url" id="portfolio" >
-    </div>
-    <div>
-        
-        <label for="favColor">favColor</label>
-        <input type="color" id="favColor" #ff0000>
-        
-    </div>
-    <div>
-        <label for="likeness">likeness</label>
-        <input type="color" id="likeness" minlength="1" maxlength="100">
-    </div>
-    <div>
-        <label for="submit">Submit</label>
-        <input type="button" id="submit" >
-    </div>
-</form>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" minlength="3" maxlength="50">
+        </div><br>
+        <div>
+            <label for="portfolio">portfolio</label>
+            <input type="url" id="portfolio" name="portfolio">
+        </div><br>
+        <div>
+            <label for="favColor">favColor</label>
+            <select name="favColor" id="favColor" >
+                <option value="Please choose an option">--Please choose an option--</option>
+           
+            <option value="red">red</option>
+            <option value="black">black</option>
+            <option value="blue"> blue</option></select>
+        </div><br>
+        <div>
+            <label for="likeness">likeness</label>
+            <input type="range" id="likeness" min="1" max="100">
+        </div><br>
+        <div> <button type="submit" id="submit" value="Submit">submit button</div>
+    </form>
 </body>
-
 </html>
